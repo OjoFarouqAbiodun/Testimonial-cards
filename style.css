@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+    padding: 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1000px;
+}
+
+.item-1 {
+    background: hsl(263, 55%, 52%) url(./images/bg-pattern-quotation.svg) no-repeat;
+    /* background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat; */
+    background-position: top right;
+    padding: 20px;
+    color: hsl(214, 17%, 92%);
+    border-radius: 8px;
+    grid-column: span 2;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.137);
+}
+
+.item-2 {
+    background-color: hsl(217, 19%, 35%);
+    padding: 20px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.137);
+}
+
+.item-3 {
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    color: hsl(217, 19%, 35%);
+    border-radius: 8px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.137);
+}
+
+.item-4 {
+    background-color: hsl(219, 29%, 14%);
+    padding: 20px;
+    color: hsl(214, 17%, 92%);
+    border-radius: 8px;
+    grid-column: span 2;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.137);
+}
+
+.item-5 {
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    color: hsl(217, 19%, 35%);
+    border-radius: 8px;
+    grid-column: 4;
+    grid-row: 1 / 3;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.137);
+
+}
+
+.avatar {
+    display: flex;
+    gap: 15px;
+    justify-content: top;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.avatar-image {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    border: 2px solid hsla(214, 17%, 92%, 0.466);
+}
+
+.avatar-qualification {
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.avatar-about {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: hsl(0, 0%, 100%);
+}
+
+.avatar-bio {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+#avatar-about {
+    color: hsl(217, 19%, 35%);
+}
+
+
+@media (max-width: 600px) {
+    body {
+        height: auto;
+    }
+    .grid {
+        display: block;
+    }
+    .item {
+        margin-bottom: 20px;
+    }
+}
